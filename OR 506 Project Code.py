@@ -56,6 +56,7 @@ print("k                    ", "x_k                                       ", "f(
 print(k,"      ", np.transpose(x_k), "                        ", f(x_k[0,0], x_k[1,0], x_k[2,0], x_k[3,0], pen))
 
 # Begin iterations and setup stopping criteria 
+# This while loop perform's Cauchy's Method of Steepest Descent
 while k < itmax and (np.linalg.norm(fgrad(x_k[0,0], x_k[1,0], x_k[2,0], x_k[3,0], pen)) / (1 + abs(f(x_k[0,0], x_k[1,0], x_k[2,0], x_k[3,0], pen)))) > epsilon: 
     k = k + 1                                               ## Move to next iteration (k + 1)
     d_k = -1 * fgrad(x_k[0,0], x_k[1,0], x_k[2,0], x_k[3,0], pen)              ## Calculate new direction of descent (dk = -gradient(xk))

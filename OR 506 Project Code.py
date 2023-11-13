@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
     OR 506 Project
-    Author: Thad McInnis
+    Author: Thad M.
 """
 import numpy as np
 
